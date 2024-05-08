@@ -5,12 +5,7 @@
   align-items: center;
 }
 
-.body {
-  width: 60rem;
-  height: 100%;
-}
-
-.category {
+.page_category {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -18,12 +13,12 @@
   border-bottom: 1px solid black;
 }
 
-.category img {
+.page_category img {
   height: 0.8rem;
   width: 0.8rem;
 }
 
-.category select {
+.page_category select {
   border: 1px solid #ebeef1;
 }
 
