@@ -9,10 +9,6 @@ body {
   width: 100%;
 }
 
-.up {
-  width: 1024px;
-  margin: auto;
-}
 .body {
   z-index: 0;
   position: relative;

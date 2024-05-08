@@ -1,21 +1,29 @@
 body {
   margin: 0;
 }
+
+.test {
+  background-color: aqua;
+}
 .wrap {
+  width: 100%;
+}
+
+.up {
+  width: 1024px;
+  margin: auto;
+}
+.body {
   z-index: 0;
   position: relative;
   margin: auto;
   max-width: 1024px;
 }
-.test {
-  background-color: aqua;
-}
 
 .top-icons {
   height: 40px;
+  width: 100%;
   display: flex;
-  position: relative;
-  z-index: 2;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #ebeefe;
@@ -64,8 +72,8 @@ body {
 .top-menu {
   height: 110px;
   padding-top: 35px;
-  z-index: 1;
   position: sticky;
+  z-index: 3;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -155,7 +163,8 @@ body {
   flex-direction: column;
   position: absolute;
   z-index: 5;
-  transform: translateX(210px);
+  margin-top: 42px;
+  transform: translateX(-200px);
   background-color: white;
   border: 1px solid #e0e3f2;
   overflow-y: scroll;
@@ -186,7 +195,8 @@ body {
   flex-direction: column;
   position: absolute;
   z-index: 5;
-  transform: translateX(419px);
+  margin-top: 42px;
+  transform: translateX(9px);
   background-color: white;
   border: 1px solid #e0e3f2;
   overflow-y: scroll;
@@ -214,7 +224,8 @@ body {
   flex-direction: column;
   position: absolute;
   z-index: 5;
-  transform: translateX(628px);
+  margin-top: 42px;
+  transform: translateX(216px);
   background-color: white;
   border: 1px solid #e0e3f2;
   overflow-y: scroll;
@@ -236,9 +247,10 @@ body {
 }
 .notice-list.on {
   width: 20rem;
-  transform: translateX(55rem);
+  margin-top: 42px;
+  transform: translateX(50rem);
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   border: 1px solid #ebeefe;
   border-top: none;
   display: block;
@@ -255,6 +267,7 @@ body {
 .notice-list .list span img {
   width: 2rem;
   border-radius: 5rem;
+  padding: 0.4rem;
 }
 
 .notice-list .list div h5 {
@@ -266,12 +279,32 @@ body {
 .myStore-menu {
   display: none;
 }
-
+.myStore-menu.on {
+  width: 5rem;
+  height: fit-content;
+  position: absolute;
+  z-index: 5;
+  text-align: center;
+  margin-top: 30px;
+  transform: translateX(59.5rem);
+  background-color: white;
+  border: 1px solid #ebeefe;
+  border-top: none;
+  display: block;
+}
+.myStore-menu a {
+  text-decoration: none;
+}
+.myStore-menu a div {
+  padding: 0.3rem 0;
+  font-size: 13px;
+  color: grey;
+}
 .pop {
   width: 6rem;
   position: fixed;
   z-index: 5;
-  transform: translate(1260px, -40px);
+  transform: translate(1040px, 10px);
   background-color: white;
 }
 .pop .wish-list {
@@ -342,31 +375,10 @@ body {
   background-color: white;
   border: none;
 }
-
-.myStore-menu.on {
-  width: 5rem;
-  height: fit-content;
-  position: absolute;
-  z-index: 2;
-  text-align: center;
-  transform: translateX(67rem);
-  background-color: white;
-  border: 1px solid #ebeefe;
-  border-top: none;
-  display: block;
-}
-.myStore-menu a {
-  text-decoration: none;
-}
-.myStore-menu a div {
-  padding: 0.3rem 0;
-  font-size: 13px;
-  color: grey;
-}
-
 .body .main-banner .img-slide {
   overflow: hidden;
   position: absolute;
+  z-index: 0;
 }
 .body .main-banner .img-slide .slide {
   width: 1024px;
