@@ -301,8 +301,8 @@ body {
   position: fixed;
   z-index: 5;
   transform: translate(1040px, 10px);
-  background-color: white;
 }
+
 .pop .wish-list {
   height: 3.4rem;
   display: flex;
@@ -310,6 +310,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  background-color: white;
 }
 .pop div {
   margin: 0.5rem 0;
@@ -335,6 +336,7 @@ body {
   align-items: center;
   flex-direction: column;
   border: 1px solid #e0e3f2;
+  background-color: white;
 }
 .pop .recent-view h5 {
   height: fit-content;
@@ -364,6 +366,7 @@ body {
 .pop .top-button {
   padding: 0.8rem;
   border: 1px solid #e0e3f2;
+  background-color: white;
 }
 .pop .top-button button {
   width: 100%;
