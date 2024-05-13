@@ -160,7 +160,6 @@ a {
   transform: translateX(-200px);
   background-color: white;
   border: 1px solid #e0e3f2;
-  overflow-y: auto;
 }
 
 .category-menu .first-cate.on h4 {
@@ -170,11 +169,19 @@ a {
 .category-menu .second-cate.on .all,
 .category-menu .third-cate.on .all {
   border-bottom: 1px solid #e0e3f2;
+  height: 40px;
 }
+.category-menu .second-cate.on .all,
+.category-menu .third-cate.on .all {
+  font-size: 14px;
+  font-weight: 500px;
+}
+
 .category-menu .first-cate.on #cate-list1 {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 0;
+  overflow-y: auto;
 }
 .category-menu .first-cate.on #cate-list1 a {
   padding: 0.4rem 1rem;
@@ -202,7 +209,6 @@ a {
   transform: translateX(9px);
   background-color: white;
   border: 1px solid #e0e3f2;
-  overflow-y: auto;
 }
 .category-menu .second-cate.on h4 {
   margin: 0.8rem 1rem;
@@ -212,6 +218,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 0;
+  overflow-y: auto;
 }
 .category-menu .second-cate.on #cate-list2 a {
   padding: 0.4rem 1rem;
@@ -239,7 +246,6 @@ a {
   transform: translateX(216px);
   background-color: white;
   border: 1px solid #e0e3f2;
-  overflow-y: scroll;
 }
 .category-menu .third-cate.on h4 {
   margin: 0.8rem 1rem;
@@ -249,6 +255,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 0;
+  overflow: auto;
 }
 .category-menu .third-cate.on #cate-list3 a {
   padding: 0.4rem 1rem;
