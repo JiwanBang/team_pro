@@ -55,10 +55,32 @@ a {
 
 .top-icons .my-btns {
   display: flex;
+}
+.top-icons .my-btns .noCookie {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 1rem;
+  font-size: 13px;
+  color: gray;
+  overflow: hidden;
+  width: 0;
+}
+.top-icons .my-btns .noCookie.on {
+  width: 150px;
+}
+
+.top-icons .my-btns .Cookie {
+  display: flex;
   align-items: center;
   gap: 1rem;
   font-size: 13px;
   color: gray;
+  overflow: hidden;
+  width: 0;
+}
+.top-icons .my-btns .Cookie.on {
+  width: 180px;
 }
 
 .top-menu {
@@ -275,7 +297,7 @@ a {
 .notice-list.on {
   width: 20rem;
   margin-top: 42px;
-  transform: translate(50rem, -10px);
+  transform: translate(50rem, 11px);
   position: absolute;
   z-index: 4;
   border: 1px solid #ebeefe;
@@ -313,7 +335,7 @@ a {
   z-index: 5;
   text-align: center;
   margin-top: 30px;
-  transform: translateX(59.5rem);
+  transform: translate(59.5rem, 24px);
   background-color: white;
   border: 1px solid #ebeefe;
   border-top: none;

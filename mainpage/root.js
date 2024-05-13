@@ -1,7 +1,8 @@
 const bodyElem = document.getElementsByClassName("body")[0];
 const noticeElem = document.getElementById("notice");
 const noticelistElem = document.getElementById("notice-list");
-const mystoreElem = document.getElementById("my-store");
+const mystore1Elem = document.getElementById("my-store1");
+const mystore2Elem = document.getElementById("my-store2");
 const mystorelistElem = document.getElementById("myStore-menu");
 const cateImgElem = document.getElementById("cateImg");
 const firstCateElem = document.getElementsByClassName("first-cate")[0];
@@ -29,12 +30,22 @@ noticeElem.onmouseout = () => {
   }, 1500);
 };
 
-mystoreElem.onmouseover = () => {
+mystore1Elem.onmouseover = () => {
+  mystorelistElem.classList.add("on");
+};
+
+mystore1Elem.onmouseout = () => {
+  setTimeout(() => {
+    mystorelistElem.classList.remove("on");
+  }, 1500);
+};
+
+mystore2Elem.onmouseover = () => {
   mystorelistElem.classList.add("on");
   noticelistElem.classList.remove("on");
 };
 
-mystoreElem.onmouseout = () => {
+mystore2Elem.onmouseout = () => {
   setTimeout(() => {
     mystorelistElem.classList.remove("on");
   }, 1500);
