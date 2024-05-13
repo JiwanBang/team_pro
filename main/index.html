@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>root</title>
+  <title>main</title>
   <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -34,10 +34,10 @@
         </div>
         <div class="my-btns">
           <button>로그아웃</button>
-          <div class="notice">알림 ▼</div>
-          <div class="my-store">내 상점 ▼</div>
+          <div class="notice" id="notice">알림 ▼</div>
+          <div class="my-store" id="my-store">내 상점 ▼</div>
         </div>
-        <div class="notice-list">
+        <div class="notice-list" id="notice-list">
           <div class="list">
             <span><img src="./imgs/1036788552_w80.png"></span>
             <div>
@@ -46,7 +46,7 @@
             </div>
           </div>
         </div>
-        <div class="myStore-menu">
+        <div class="myStore-menu" id="myStore-menu">
           <a href="./">
             <div>내 상품</div>
           </a>
@@ -106,51 +106,87 @@
           </a>
 
         </div>
-
       </div>
       <div class="category">
-        <div class="img"></div>
+        <div class="img" id="cateImg"></div>
         <div><a href="./">번개장터 판매자센터</a></div>
-        <div class="category-menu">
+        <div class="category-menu" id="category-menu">
           <div class="first-cate">
             <div class="all">
               <h4>전체 카테고리</h4>
             </div>
-            <div class="cate-list">
-              <a>여성의류</a>
-              <a>남성의류</a>
-              <a>신발</a>
-              <a>가방/지갑</a>
-              <a>시계</a>
-              <a>쥬얼리</a>
-              <a>패션 액세서리</a>
-              <a>디지털</a>
-              <a>가전제품</a>
-              <a>스포츠/레저</a>
-              <a>차량/오토바이</a>
-              <a>스타굿즈</a>
-              <a>예술/희귀/수집품</a>
-              <a>음반/악기</a>
-              <a>도서/티켓/문구</a>
-              <a>뷰티/미용</a>
-              <a>가구/인테리어</a>
-              <a>생활/주방용품</a>
+            <div id="cate-list1">
+              <a href="#" class="cate-list">여성의류</a>
+              <a href="#" class="cate-list">남성의류</a>
+              <a href="#" class="cate-list">신발</a>
+              <a href="#" class="cate-list">가방/지갑</a>
+              <a href="#" class="cate-list">시계</a>
+              <a href="#" class="cate-list">쥬얼리</a>
+              <a href="#" class="cate-list">패션 액세서리</a>
+              <a href="#" class="cate-list">디지털</a>
+              <a href="#" class="cate-list">가전제품</a>
+              <a href="#" class="cate-list">스포츠/레저</a>
+              <a href="#" class="cate-list">차량/오토바이</a>
+              <a href="#" class="cate-list">스타굿즈</a>
+              <a href="#" class="cate-list">예술/희귀/수집품</a>
+              <a href="#" class="cate-list">음반/악기</a>
+              <a href="#" class="cate-list">도서/티켓/문구</a>
+              <a href="#" class="cate-list">뷰티/미용</a>
+              <a href="#" class="cate-list">가구/인테리어</a>
+              <a href="#" class="cate-list">생활/주방용품</a>
             </div>
           </div>
           <div class="second-cate">
             <div class="all">
               <h4>전체 카테고리</h4>
             </div>
-            <div class="cate-list">
-              <a>1245</a>
+            <div id="cate-list2">
+              <a href="#" class="cate-list">여성의류</a>
+              <a href="#" class="cate-list">남성의류</a>
+              <a href="#" class="cate-list">신발</a>
+              <a href="#" class="cate-list">가방/지갑</a>
+              <a href="#" class="cate-list">시계</a>
+              <a href="#" class="cate-list">쥬얼리</a>
+              <a href="#" class="cate-list">패션 액세서리</a>
+              <a href="#" class="cate-list">디지털</a>
+              <a href="#" class="cate-list">가전제품</a>
+              <a href="#" class="cate-list">스포츠/레저</a>
+              <a href="#" class="cate-list">차량/오토바이</a>
+              <a href="#" class="cate-list">스타굿즈</a>
+              <a href="#" class="cate-list">예술/희귀/수집품</a>
+              <a href="#" class="cate-list">음반/악기</a>
+              <a href="#" class="cate-list">도서/티켓/문구</a>
+              <a href="#" class="cate-list">뷰티/미용</a>
+              <a href="#" class="cate-list">가구/인테리어</a>
+              <a href="#" class="cate-list">생활/주방용품</a>
             </div>
           </div>
           <div class="third-cate ">
             <div class="all">
               <h4>전체 카테고리</h4>
             </div>
-            <div class="cate-list"></div>
+            <div id="cate-list3">
+              <a href="#" class="cate-list">여성의류</a>
+              <a href="#" class="cate-list">남성의류</a>
+              <a href="#" class="cate-list">신발</a>
+              <a href="#" class="cate-list">가방/지갑</a>
+              <a href="#" class="cate-list">시계</a>
+              <a href="#" class="cate-list">쥬얼리</a>
+              <a href="#" class="cate-list">패션 액세서리</a>
+              <a href="#" class="cate-list">디지털</a>
+              <a href="#" class="cate-list">가전제품</a>
+              <a href="#" class="cate-list">스포츠/레저</a>
+              <a href="#" class="cate-list">차량/오토바이</a>
+              <a href="#" class="cate-list">스타굿즈</a>
+              <a href="#" class="cate-list">예술/희귀/수집품</a>
+              <a href="#" class="cate-list">음반/악기</a>
+              <a href="#" class="cate-list">도서/티켓/문구</a>
+              <a href="#" class="cate-list">뷰티/미용</a>
+              <a href="#" class="cate-list">가구/인테리어</a>
+              <a href="#" class="cate-list">생활/주방용품</a>
+            </div>
           </div>
+
         </div>
         <div class="pop">
           <div class="wish-list">
@@ -202,22 +238,7 @@
 
           <div class="goods-list">
             <div class="list">
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
+              <a href="#" class="item">
                 <div>
                   <div>
                     <img src="./imgs/sample.png">
@@ -229,10 +250,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
+              </a>
+              <a href="#" class="item">
                 <div>
                   <div>
                     <img src="./imgs/sample.png">
@@ -244,10 +263,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
+              </a>
+              <a href="#" class="item">
                 <div>
                   <div>
                     <img src="./imgs/sample.png">
@@ -259,10 +276,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
+              </a>
+              <a href="#" class="item">
                 <div>
                   <div>
                     <img src="./imgs/sample.png">
@@ -274,94 +289,71 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div>
-              </div>
+              </a>
+              <a href="#" class="item">
+                <div>
+                  <div>
+                    <img src="./imgs/sample.png">
+                  </div>
+                  <div class="info">
+                    <div>
+                      <p>엘지전자 40인치</p>
+                      <div>20000원<span>3일전</span></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="item">
+                <div>
+                  <div>
+                    <img src="./imgs/sample.png">
+                  </div>
+                  <div class="info">
+                    <div>
+                      <p>엘지전자 40인치</p>
+                      <div>20000원<span>3일전</span></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="item">
+                <div>
+                  <div>
+                    <img src="./imgs/sample.png">
+                  </div>
+                  <div class="info">
+                    <div>
+                      <p>엘지전자 40인치</p>
+                      <div>20000원<span>3일전</span></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="item">
+                <div>
+                  <div>
+                    <img src="./imgs/sample.png">
+                  </div>
+                  <div class="info">
+                    <div>
+                      <p>엘지전자 40인치</p>
+                      <div>20000원<span>3일전</span></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+
             </div>
-            <div class="list">
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-            </div>
+
+
           </div>
+
         </div>
 
+
       </div>
-
     </div>
-
     <div class="footer">
       <div class="footer-menu">
         <div>
@@ -380,9 +372,9 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="./index.js"></script>
+    <script src="./index.js"></script>
+    <script src="./root.js"></script>
 </body>
 
 </html>
