@@ -1,4 +1,4 @@
-const bodyElem = document.getElementsByClassName("product-list-body")[0];
+const bodyElem = document.getElementsByClassName("body")[0];
 const noticeElem = document.getElementById("notice");
 const noticelistElem = document.getElementById("notice-list");
 const mystore1Elem = document.getElementById("my-store1");
