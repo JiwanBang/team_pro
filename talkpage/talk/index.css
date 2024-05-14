@@ -429,6 +429,10 @@ a {
   border: none;
 }
 
+.footer {
+  position: relative;
+  background-color: white;
+}
 .footer .footer-menu div span {
   padding: 0 1rem;
 }
@@ -464,13 +468,88 @@ a {
 /*body*/
 
 .body {
-  background-color: #ebeefe;
+  background-color: rgb(249, 249, 249);
 }
 
 .body #talk-container {
   width: 1024px;
-  height: 1000px;
+  height: 750px;
+  position: relative;
+  z-index: 0;
   display: flex;
   margin: auto;
   background-color: white;
+}
+
+.body #talk-container #talk-list {
+  width: 512px;
+  height: 100%;
+  border: 1px solid #ebeefe;
+}
+.body #talk-container #talk-list .ban-list {
+  height: 3rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.body #talk-container #talk-list .talk-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.body #talk-container #talk-list .talk-wrap > div {
+  width: 100%-2rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 0;
+}
+.body #talk-container #talk-list .talk-wrap > div > div {
+  padding: 5px;
+  font-size: 22px;
+  font-weight: 900;
+}
+.body #talk-container #talk-list .talk-wrap ul {
+  margin: 0;
+  padding: 0;
+}
+
+.body #talk-container #talk-list .talk-wrap ul li {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body #talk-container #talk-list .talk-wrap ul li:hover {
+  background-color: rgb(249, 249, 249);
+}
+.body #talk-container #talk-list .talk-wrap ul li img {
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+  border-radius: 30px;
+}
+.body #talk-container #talk-log {
+  width: 512px;
+  height: 100%;
+  border: 1px solid #ebeefe;
+  border-left: none;
+}
+
+.body #talk-container #talk-log .talk-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+
+.body #talk-container #talk-log .seller-info {
+  height: 3rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
 }
