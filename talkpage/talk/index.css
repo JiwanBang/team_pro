@@ -496,7 +496,7 @@ a {
 }
 .body #talk-container #talk-list .talk-wrap {
   width: 100%;
-  height: 100%;
+  height: 707px;
   overflow: auto;
 }
 .body #talk-container #talk-list .talk-wrap > div {
@@ -520,9 +520,15 @@ a {
   list-style: none;
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
+.body #talk-container #talk-list .talk-wrap ul li > span {
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+
 .body #talk-container #talk-list .talk-wrap ul li:hover {
   background-color: rgb(249, 249, 249);
 }
@@ -532,6 +538,22 @@ a {
   margin-left: 1rem;
   border-radius: 30px;
 }
+
+.body #talk-container #talk-list .talk-wrap ul li h4 {
+  margin: 0 0 4px;
+}
+.body #talk-container #talk-list .talk-wrap ul li .talk-info div {
+  font-size: 12px;
+  color: gray;
+}
+
+.body #talk-container #talk-list .talk-wrap ul li .item-img img,
+.body #talk-container #talk-log .item-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
 .body #talk-container #talk-log {
   width: 512px;
   height: 100%;
@@ -541,10 +563,24 @@ a {
 
 .body #talk-container #talk-log .talk-wrap {
   width: 100%;
-  height: 100%;
-  background-color: aqua;
+  height: 555px;
+  overflow: auto;
+  border-bottom: 1px solid #ebeefe;
 }
-
+.body #talk-container #talk-log .talk-wrap .date-line {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 10px;
+  font-size: 13px;
+  color: #e0e3f2;
+}
+.body #talk-container #talk-log .talk-wrap .date-line hr {
+  opacity: 0.2;
+  color: #ebeefe;
+}
+.body #talk-container #talk-log .talk-wrap .date-line div {
+  width: 195px;
+}
 .body #talk-container #talk-log .seller-info {
   height: 3rem;
   padding: 0 1.5rem;
@@ -552,4 +588,77 @@ a {
   flex: 1;
   justify-content: space-between;
   align-items: center;
+}
+.body #talk-container #talk-log .talk-wrap .seller-info2 > div {
+  width: fit-content;
+  margin: auto;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body #talk-container #talk-log .talk-wrap .seller-info2 > div img {
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
+  border-radius: 50px;
+}
+
+.body #talk-container #talk-log .seller-info h4 {
+  margin: 0;
+}
+
+.body #talk-container #talk-log .seller-info .nick div {
+  font-size: 12px;
+  color: gray;
+}
+.body #talk-container #talk-log .item-info {
+  height: 4rem;
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  padding: 0 1rem;
+  align-items: center;
+  border-bottom: 1px solid #ebeefe;
+}
+.body #talk-container #talk-log .item-info div > div {
+  font-size: 13px;
+  color: gray;
+}
+
+.body #talk-container #talk-log .item-info span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.body #talk-container #talk-log .item-info span > span {
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.body #talk-container #talk-log .item-info span h4 {
+  font-size: 15px;
+  margin: 0;
+}
+.body #talk-container #talk-log .talk-input {
+  height: 3rem;
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.body #talk-container #talk-log .talk-input div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #e0e3f2;
+  border-radius: 25px;
+}
+.body #talk-container #talk-log .talk-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #e0e3f2;
 }
