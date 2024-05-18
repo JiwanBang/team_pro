@@ -460,3 +460,106 @@ a {
   display: flex;
   color: #ebeefe;
 }
+#modal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#modal .login-modal.on {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 10000;
+  position: fixed;
+  background-color: black;
+  opacity: 0.2;
+}
+
+#modal .login {
+  display: none;
+}
+
+#modal .login.on {
+  width: 500px;
+  height: 600px;
+  top: 200px;
+  margin: auto;
+  position: fixed;
+  z-index: 11000;
+  opacity: 1;
+  background-color: white;
+  display: block;
+}
+#modal .regist {
+  display: none;
+}
+#modal .regist.on {
+  width: 500px;
+  height: 600px;
+  top: 200px;
+  margin: auto;
+  position: fixed;
+  z-index: 11000;
+  opacity: 1;
+  background-color: white;
+  display: block;
+}
+
+/* log-in */
+.log,
+.regist {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.log .user-box,
+.regist .user-box {
+  width: 25rem;
+}
+
+.log .user-box h1,
+.regist .user-box h1 {
+  text-align: center;
+}
+
+.log .user-box p,
+.regist .user-box p {
+  font-size: 0.75rem;
+}
+.log .user-box form > *,
+.regist .user-box form > * {
+  display: block;
+}
+.log .user-box form fieldset,
+.regist .user-box form fieldset {
+  border-radius: 0.5rem;
+  border: 1px solid#c5cbd0;
+  margin: 1rem 0;
+}
+.log .user-box form fieldset input,
+.regist .user-box form fieldset input {
+  width: 100%;
+  border: none;
+  padding: 0.2rem;
+  outline: none;
+}
+
+.log .user-box form .login-btn,
+.regist .user-box form .login-btn {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  color: white;
+  background-color: #c5cbd0;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.log .user-box form a,
+.regist .user-box form a {
+  text-align: center;
+}
