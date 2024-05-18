@@ -378,9 +378,76 @@
         </div>
       </div>
     </div>
+  </div>
+  <div id="modal">
+    <div class="login-modal">
+    </div>
+    <div class="login">
+      <div class="log">
+        <div class="user-box">
+          <h1>번개장터 로그인</h1>
+          <form action="" id="login">
+            <fieldset>
+              <legend>이메일 주소</legend>
+              <input type="email" name="email" placeholder="이메일 주소" />
+            </fieldset>
+            <div class="err" id="email"></div>
+            <fieldset>
+              <legend>비밀번호</legend>
+              <input type="password" name="pw" placeholder="비밀번호" />
+            </fieldset>
+            <div class="err" id="pw"></div>
+            <button class="login-btn">로그인</button>
+            <a href="" class="regist">
+              회원가입
+            </a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="regist">
+      <div class="regist">
+        <div class="user-box">
+          <h1>번개장터 회원가입</h1>
 
-    <script src="./index.js"></script>
-    <script src="./root.js"></script>
+          <form id="regist" action="http" method="post">
+            <fieldset>
+              <legend>이메일 주소</legend>
+              <input type="email" name="email" placeholder="이메일 주소" />
+            </fieldset>
+            <div class="err" id="email-result"></div>
+            <fieldset>
+              <legend>비밀번호</legend>
+              <input type="password" name="pw" placeholder="비밀번호" />
+            </fieldset>
+            <div class="err" id="pw-result"></div>
+            <fieldset>
+              <legend>비밀번호 확인</legend>
+              <input type="password" name="pw-check" placeholder="비밀번호" />
+            </fieldset>
+            <div class="err" id="pw-check-result"></div>
+            <fieldset>
+              <legend>닉네임</legend>
+              <input type="text" name="nick" placeholder="닉네임" />
+              <div class="err" id="nick-result"></div>
+            </fieldset>
+            <button class="login-btn">회원가입</button>
+          </form>
+
+
+          <p>이미 계정이 있으신가요?
+            <a href="" class="regist">
+              로그인
+            </a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+  <script src="./root.js"></script>
 </body>
 
 </html>
