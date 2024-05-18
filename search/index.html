@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>root</title>
+  <title>product-list</title>
   <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -33,11 +33,17 @@
           </button>
         </div>
         <div class="my-btns">
-          <button>로그아웃</button>
-          <div class="notice">알림 ▼</div>
-          <div class="my-store">내 상점 ▼</div>
+          <div class="noCookie">
+            <button>로그인</button>
+            <div class="my-store" id="my-store1">내 상점 ▼</div>
+          </div>
+          <div class="Cookie on">
+            <button>로그아웃</button>
+            <div class="notice" id="notice">알림 ▼</div>
+            <div class="my-store" id="my-store2">내 상점 ▼</div>
+          </div>
         </div>
-        <div class="notice-list">
+        <div class="notice-list" id="notice-list">
           <div class="list">
             <span><img src="./imgs/1036788552_w80.png"></span>
             <div>
@@ -46,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class="myStore-menu">
+        <div class="myStore-menu" id="myStore-menu">
           <a href="./">
             <div>내 상품</div>
           </a>
@@ -106,51 +112,87 @@
           </a>
 
         </div>
-
       </div>
       <div class="category">
-        <div class="img"></div>
+        <div class="img" id="cateImg"></div>
         <div><a href="./">번개장터 판매자센터</a></div>
-        <div class="category-menu">
+        <div class="category-menu" id="category-menu">
           <div class="first-cate">
             <div class="all">
               <h4>전체 카테고리</h4>
             </div>
-            <div class="cate-list">
-              <a>여성의류</a>
-              <a>남성의류</a>
-              <a>신발</a>
-              <a>가방/지갑</a>
-              <a>시계</a>
-              <a>쥬얼리</a>
-              <a>패션 액세서리</a>
-              <a>디지털</a>
-              <a>가전제품</a>
-              <a>스포츠/레저</a>
-              <a>차량/오토바이</a>
-              <a>스타굿즈</a>
-              <a>예술/희귀/수집품</a>
-              <a>음반/악기</a>
-              <a>도서/티켓/문구</a>
-              <a>뷰티/미용</a>
-              <a>가구/인테리어</a>
-              <a>생활/주방용품</a>
+            <div id="cate-list1">
+              <a href="#" class="cate-list">여성의류</a>
+              <a href="#" class="cate-list">남성의류</a>
+              <a href="#" class="cate-list">신발</a>
+              <a href="#" class="cate-list">가방/지갑</a>
+              <a href="#" class="cate-list">시계</a>
+              <a href="#" class="cate-list">쥬얼리</a>
+              <a href="#" class="cate-list">패션 액세서리</a>
+              <a href="#" class="cate-list">디지털</a>
+              <a href="#" class="cate-list">가전제품</a>
+              <a href="#" class="cate-list">스포츠/레저</a>
+              <a href="#" class="cate-list">차량/오토바이</a>
+              <a href="#" class="cate-list">스타굿즈</a>
+              <a href="#" class="cate-list">예술/희귀/수집품</a>
+              <a href="#" class="cate-list">음반/악기</a>
+              <a href="#" class="cate-list">도서/티켓/문구</a>
+              <a href="#" class="cate-list">뷰티/미용</a>
+              <a href="#" class="cate-list">가구/인테리어</a>
+              <a href="#" class="cate-list">생활/주방용품</a>
             </div>
           </div>
           <div class="second-cate">
             <div class="all">
-              <h4>전체 카테고리</h4>
+              <h4>카테고리</h4>
             </div>
-            <div class="cate-list">
-              <a>1245</a>
+            <div id="cate-list2">
+              <a href="#" class="cate-list">여성의류</a>
+              <a href="#" class="cate-list">남성의류</a>
+              <a href="#" class="cate-list">신발</a>
+              <a href="#" class="cate-list">가방/지갑</a>
+              <a href="#" class="cate-list">시계</a>
+              <a href="#" class="cate-list">쥬얼리</a>
+              <a href="#" class="cate-list">패션 액세서리</a>
+              <a href="#" class="cate-list">디지털</a>
+              <a href="#" class="cate-list">가전제품</a>
+              <a href="#" class="cate-list">스포츠/레저</a>
+              <a href="#" class="cate-list">차량/오토바이</a>
+              <a href="#" class="cate-list">스타굿즈</a>
+              <a href="#" class="cate-list">예술/희귀/수집품</a>
+              <a href="#" class="cate-list">음반/악기</a>
+              <a href="#" class="cate-list">도서/티켓/문구</a>
+              <a href="#" class="cate-list">뷰티/미용</a>
+              <a href="#" class="cate-list">가구/인테리어</a>
+              <a href="#" class="cate-list">생활/주방용품</a>
             </div>
           </div>
           <div class="third-cate ">
             <div class="all">
-              <h4>전체 카테고리</h4>
+              <h4>카테고리</h4>
             </div>
-            <div class="cate-list"></div>
+            <div id="cate-list3">
+              <a href="#" class="cate-list">여성의류</a>
+              <a href="#" class="cate-list">남성의류</a>
+              <a href="#" class="cate-list">신발</a>
+              <a href="#" class="cate-list">가방/지갑</a>
+              <a href="#" class="cate-list">시계</a>
+              <a href="#" class="cate-list">쥬얼리</a>
+              <a href="#" class="cate-list">패션 액세서리</a>
+              <a href="#" class="cate-list">디지털</a>
+              <a href="#" class="cate-list">가전제품</a>
+              <a href="#" class="cate-list">스포츠/레저</a>
+              <a href="#" class="cate-list">차량/오토바이</a>
+              <a href="#" class="cate-list">스타굿즈</a>
+              <a href="#" class="cate-list">예술/희귀/수집품</a>
+              <a href="#" class="cate-list">음반/악기</a>
+              <a href="#" class="cate-list">도서/티켓/문구</a>
+              <a href="#" class="cate-list">뷰티/미용</a>
+              <a href="#" class="cate-list">가구/인테리어</a>
+              <a href="#" class="cate-list">생활/주방용품</a>
+            </div>
           </div>
+
         </div>
         <div class="pop">
           <div class="wish-list">
@@ -172,194 +214,137 @@
       </div>
     </div>
 
-
-    <div class="body">
-      <div class="main-banner">
-        <div class="img-slide">
-          <div class="slide" id="slide">
-            <a href="./"><img src="./imgs/7.jpeg"></a>
-            <a href="./"><img src="./imgs/1.jpeg"></a>
-            <a href="./"><img src="./imgs/2.jpeg"></a>
-            <a href="./"><img src="./imgs/4.jpeg"></a>
-            <a href="./"><img src="./imgs/5.jpeg"></a>
-            <a href="./"><img src="./imgs/6.jpeg"></a>
-            <a href="./"><img src="./imgs/7.jpeg"></a>
-            <a href="./"><img src="./imgs/1.jpeg"></a>
-          </div>
-
-        </div>
-        <div class="btns">
-          <div id="prev"><img src="./imgs/prev.png"></div>
-          <div id="next"><img src="./imgs/next.png"></div>
-        </div>
-        <div class="ad-img">
-          <div>
-            <a href="./"><img src="./imgs//ad-img.png"></a>
-          </div>
-        </div>
-        <div class="today-goods">
-          <h2>오늘의 상품 추천</h2>
-
-          <div class="goods-list">
-            <div class="list">
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
+    <div class="product-list-body">
+      <div>
+        <div class="product-cate">
+          <div class="search-cate">
+            <p>카테고리</p>
+            <div>
+              <div class="result-cate1"><span><img src="./imgs/path.png"></span>123123<p>4</p>
               </div>
-              <div>
+              <div class="result-cate2"><span><img src="./imgs/path.png"></span>123123<p>4</p>
               </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
+              <div class="result-cate3"><span><img src="./imgs/path.png"></span>123123<p>4</p>
               </div>
-              <div>
-              </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-            </div>
-            <div class="list">
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-              </div>
-              <div class="item">
-                <div>
-                  <div>
-                    <img src="./imgs/sample.png">
-                  </div>
-                  <div class="info">
-                    <div>
-                      <p>엘지전자 40인치</p>
-                      <div>20000원<span>3일전</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
+              <div class="result-cate4"><span><img src="./imgs/path.png"></span>123123<p>4</p>
               </div>
             </div>
           </div>
+          <div class="cate-btns" id="cate-btns">
+            <div class="sub-btn"><a href="#">아우터<span>76만+</span></a></div>
+            <div class="sub2-btn"><a href="#">패딩<span>76만+</span></a></div>
+          </div>
         </div>
+        <div class="product-list">
+          <div class="sort">
+            <h4>
+              <span>남성의류</span>의 검색결과
+            </h4>
+            <div>
+              <span id="accuracy-btn" class="on">정확도순</span>
+              <div class="line"></div>
+              <span id="recent-btn">최신순</span>
+              <div class="line"></div>
+              <span id="low-btn">저가순</span>
+              <div class="line"></div>
+              <span id="high-btn">고가순</span>
+            </div>
+          </div>
+          <div class="product-wrap">
+            <a href="#">
+              <div class="product">
+                <img src="./imgs/sample-img.png">
+                <div class="info">
+                  <p>LGtv</p>
+                  <div><span><span>25000</span>원</span>4초전</div>
+                </div>
+                <div class="location"><img src="./imgs/location.png">서울시 강동구 길동</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product">
+                <img src="./imgs/sample-img.png">
+                <div class="info">
+                  <p>LGtv</p>
+                  <div><span><span>25000</span>원</span>4초전</div>
+                </div>
+                <div class="location"><img src="./imgs/location.png">서울시 강동구 길동</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product">
+                <img src="./imgs/sample-img.png">
+                <div class="info">
+                  <p>LGtv</p>
+                  <div><span><span>25000</span>원</span>4초전</div>
+                </div>
+                <div class="location"><img src="./imgs/location.png">서울시 강동구 길동</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product">
+                <img src="./imgs/sample-img.png">
+                <div class="info">
+                  <p>LGtv</p>
+                  <div><span><span>25000</span>원</span>4초전</div>
+                </div>
+                <div class="location"><img src="./imgs/location.png">서울시 강동구 길동</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product">
+                <img src="./imgs/sample-img.png">
+                <div class="info">
+                  <p>LGtv</p>
+                  <div><span><span>25000</span>원</span>4초전</div>
+                </div>
+                <div class="location"><img src="./imgs/location.png">서울시 강동구 길동</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product">
+                <img src="./imgs/sample-img.png">
+                <div class="info">
+                  <p>LGtv</p>
+                  <div><span><span>25000</span>원</span>4초전</div>
+                </div>
+                <div class="location"><img src="./imgs/location.png">서울시 강동구 길동</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product">
+                <img src="./imgs/sample-img.png">
+                <div class="info">
+                  <p>LGtv</p>
+                  <div><span><span>25000</span>원</span>4초전</div>
+                </div>
+                <div class="location"><img src="./imgs/location.png">서울시 강동구 길동</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product">
+                <img src="./imgs/sample-img.png">
+                <div class="info">
+                  <p>LGtv</p>
+                  <div><span><span>25000</span>원</span>4초전</div>
+                </div>
+                <div class="location"><img src="./imgs/location.png">서울시 강동구 길동</div>
+              </div>
+            </a>
 
+          </div>
+        </div>
+        <div class="page">
+          <ul class="page-list">
+            <li><a href="#" class="num on">1</a></li>
+            <li><a href="#" class="num">2</a></li>
+            <li><a href="#" class="num">3</a></li>
+            <li><a href="#" class="num">4</a></li>
+            <li><a href="#" class="num">5</a></li>
+            <li><a href="#" class="next">></a></li>
+          </ul>
+        </div>
       </div>
-
     </div>
 
     <div class="footer">
@@ -381,8 +366,75 @@
       </div>
     </div>
   </div>
+  <div id="modal">
+    <div class="login-modal">
+    </div>
+    <div class="login">
+      <div class="log">
+        <div class="user-box">
+          <h1>번개장터 로그인</h1>
+          <form action="" id="login">
+            <fieldset>
+              <legend>이메일 주소</legend>
+              <input type="email" name="email" placeholder="이메일 주소" />
+            </fieldset>
+            <div class="err" id="email"></div>
+            <fieldset>
+              <legend>비밀번호</legend>
+              <input type="password" name="pw" placeholder="비밀번호" />
+            </fieldset>
+            <div class="err" id="pw"></div>
+            <button class="login-btn">로그인</button>
+            <a href="" class="regist">
+              회원가입
+            </a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="regist">
+      <div class="regist">
+        <div class="user-box">
+          <h1>번개장터 회원가입</h1>
 
+          <form id="regist" action="http" method="post">
+            <fieldset>
+              <legend>이메일 주소</legend>
+              <input type="email" name="email" placeholder="이메일 주소" />
+            </fieldset>
+            <div class="err" id="email-result"></div>
+            <fieldset>
+              <legend>비밀번호</legend>
+              <input type="password" name="pw" placeholder="비밀번호" />
+            </fieldset>
+            <div class="err" id="pw-result"></div>
+            <fieldset>
+              <legend>비밀번호 확인</legend>
+              <input type="password" name="pw-check" placeholder="비밀번호" />
+            </fieldset>
+            <div class="err" id="pw-check-result"></div>
+            <fieldset>
+              <legend>닉네임</legend>
+              <input type="text" name="nick" placeholder="닉네임" />
+              <div class="err" id="nick-result"></div>
+            </fieldset>
+            <button class="login-btn">회원가입</button>
+          </form>
+
+
+          <p>이미 계정이 있으신가요?
+            <a href="" class="regist">
+              로그인
+            </a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="./index.js"></script>
+  <script src="./root.js"></script>
 </body>
 
 </html>
