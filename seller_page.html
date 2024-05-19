@@ -274,21 +274,211 @@
         </div>
         <div class="seller-body">
           <div class="prd-header"><h1>상품정보</h1></div>
-          <div class="sell_prd_info">
-            <div><span>상품이미지(0/12)</span></div>
+          <div class="sell_prd">
+            <div class="sell_prd_right"><span>상품이미지(0/12)</span></div>
             <div>
               <div class="upload_btn">
                 <img src="./imgs/upload_svg.svg" /> <span>이미지 등록</span>
               </div>
-              <span
+              <br />
+              <span class="prd_image_view"
                 >상품 이미지는 PC에서는 1:1, 모바일에서는 1:1.23 비율로
                 보여져요.
               </span>
             </div>
           </div>
+          <div class="sell_prd">
+            <div class="sell_prd_right"><span>상품명</span></div>
+            <div class="prd_name_input">
+              <form id="prd_name_input" action="" method="">
+                <input type="text" placeholder="상품명을 입력해주세요" />
+                <span> 0/40 </span>
+              </form>
+            </div>
+          </div>
+          <div class="sell_prd">
+            <div class="sell_prd_right"><span>카테고리</span></div>
+
+            <div class="category_area">
+              <ul class="category_ul">
+                <li>여성의류</li>
+                <li>남성의류</li>
+                <li>신발</li>
+                <li>가방/지갑</li>
+                <li>시계</li>
+                <li>쥬얼리</li>
+                <li>패션 액세서리</li>
+                <li>디지털</li>
+                <li>가전제품</li>
+                <li>스포츠/레저</li>
+                <li>차량/오토바이</li>
+                <li>스타굿즈</li>
+                <li>키덜트</li>
+                <li>예술/희귀/수집품</li>
+                <li>음반/악기</li>
+                <li>도서/티켓/문구</li>
+                <li>뷰티/미용</li>
+                <li>가구/인테리어</li>
+                <li>생활/주방용품</li>
+                <li>공구/산업용품</li>
+                <li>식품</li>
+                <li>유아동/출산</li>
+                <li>반려동물용품</li>
+                <li>기타</li>
+                <li>지역 서비스</li>
+                <li>원룸/함께살아요</li>
+                <li>번개나눔</li>
+                <li>구인구직</li>
+                <li>재능</li>
+                <li>커뮤니티</li>
+              </ul>
+              <ul class="category_ul"></ul>
+              <ul class="category_ul"></ul>
+            </div>
+          </div>
+          <div class="sell_prd">
+            <div class="sell_prd_right">상품상태<span></span></div>
+            <form id="prd_quality">
+              <div>
+                <input type="radio" name="prd_quality" />새 상품 (미사용)
+                <span> 사용하지 않은 새 상품</span><br />
+              </div>
+              <div>
+                <input type="radio" name="prd_quality" />사용감 없음
+                <span> 사용은 했지만 눈에 띄는 흔적이나 얼룩이 없음</span><br />
+              </div>
+              <div>
+                <input type="radio" name="prd_quality" />사용감 적음
+                <span> 눈에 띄는 흔적이나 얼룩이 약간 있음</span><br />
+              </div>
+              <div>
+                <input type="radio" name="prd_quality" />사용감 많음
+                <span> 눈에 띄는 흔적이나 얼룩이 많이 있음</span><br />
+              </div>
+              <div>
+                <input type="radio" name="prd_quality" />고장/파손 상품
+                <span> 기능 이상이나 외관 손상 등으로 수리/수선 필요</span
+                ><br />
+              </div>
+            </form>
+          </div>
+          <div class="sell_prd">
+            <div class="sell_prd_right"><span>사이즈(선택)</span></div>
+            <div>
+              <select class="size_select">
+                <option>사이즈를 선택해주세요</option>
+                <option>Free</option>
+                <option>2XS</option>
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>2XL</option>
+                <option>3XL</option>
+                <option>33</option>
+                <option>44</option>
+                <option>55</option>
+                <option>66</option>
+                <option>77</option>
+                <option>88</option>
+                <option>99</option>
+                <option>기타(상품 설명에 작성)</option>
+              </select>
+            </div>
+          </div>
+          <div class="sell_prd">
+            <div class="sell_prd_right"><span>설명</span></div>
+            <div>
+              <form id="prd_detail">
+                <textarea
+                  type="text"
+                  placeholder=" 브랜드, 모델명, 구매 시기, 하자 유무 등 상품 설명을 최대한 자세히 적어주세요.&#10; 전화번호, SNS 계정 등 개인정보 입력은 제한될 수 있어요. &#10; 안전하고 건전한 거래 환경을 위해 과학기술정보통신부, 한국인터넷진흥원과 번개장터(주)가 함께합니다."
+                ></textarea>
+              </form>
+              <div class="prd_detail_footer"><span>0/2000</span></div>
+            </div>
+          </div>
+          <div class="sell_prd">
+            <div class="sell_prd_right"><span>태그(선택)</span></div>
+            <div>
+              <form id="prd_tag">
+                <input name="" placeholder="태그를 입력해 주세요. (최대 5개)" />
+              </form>
+              <div class="tag_footer">
+                <span
+                  >- 태그는 띄어쓰기로 구분되며 최대 9자까지 입력할 수
+                  있어요.</span
+                ><br />
+                <span>- 내 상품을 다양한 태그로 표현해 보세요.</span><br />
+                <span>- 사람들이 내 상품을 더 잘 찾을 수 있어요.</span><br />
+                <span
+                  >- 상품과 관련 없는 태그를 입력할 경우, 판매에 제제를 받을 수
+                  있어요.</span
+                >
+              </div>
+            </div>
+          </div>
           <div class="prd-header"><h1>가격 및 배송비</h1></div>
+          <div class="sell_prd">
+            <div class="sell_prd_right"><span>가격</span></div>
+            <div>
+              <form id="prd_price">
+                <div>
+                  <input
+                    type="number"
+                    name="price"
+                    placeholder="가격을 입력해 주세요."
+                  />
+                  <span>원</span>
+                </div>
+              </form>
+              <form id="price_req">
+                <input id="checkbox_round" type="checkbox" />
+                <label for="checkbox_round"> <span>가격 제안 받기</span></label>
+              </form>
+            </div>
+          </div>
+          <div class="sell_prd">
+            <div class="sell_prd_right"><span>배송비</span></div>
+          </div>
           <div class="prd-header"><h1>추가정보</h1></div>
+          <div class="sell_prd">
+            <div class="sell_prd_right"><span>수량</span></div>
+            <form id="prd_count">
+              <div>
+                <input
+                  type="number"
+                  name="price"
+                  placeholder="숫자만 입력해 주세요."
+                />
+                <span>개</span>
+              </div>
+            </form>
+          </div>
+          <div class="sell_prd">
+            <div class="sell_prd_right"><span>직거래</span></div>
+            <div>
+              <div class="direct-trade">
+                <input type="radio" id="direct-trade-yes" name="direct-trade" />
+                <label for="direct-trade-yes"><span>가능</span></label>
+                <input type="radio" id="direct-trade-no" name="direct-trade" />
+                <label for="direct-trade-no"><span>불가능</span></label>
+              </div>
+              <div class="seller_location">
+                <div>
+                  <button>내 위치</button>
+                  <button>최근 지역</button>
+                  <button>주소 검색</button>
+                </div>
+                <input placeholder="거래 희망 장소를 입력해 주세요." />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="sticky_footer">
+        <div><button>등록하기</button></div>
       </div>
       <div class="footer">
         <div class="footer-menu">
