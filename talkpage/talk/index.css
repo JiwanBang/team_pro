@@ -300,7 +300,7 @@ a {
   margin-top: 42px;
   transform: translate(50rem, 11px);
   position: absolute;
-  z-index: 4;
+  z-index: 1100;
   border: 1px solid #ebeefe;
   border-top: none;
   display: block;
@@ -333,7 +333,7 @@ a {
   width: 5rem;
   height: fit-content;
   position: absolute;
-  z-index: 5;
+  z-index: 1100;
   text-align: center;
   margin-top: 30px;
   transform: translate(59.5rem, 24px);
@@ -634,6 +634,7 @@ a {
   color: red;
 }
 .body #talk-container .talk-modal1 .talklist-menu h2 {
+  margin: 3rem 0;
   text-align: center;
 }
 
@@ -646,6 +647,7 @@ a {
   z-index: 100;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .body #talk-container .talk-modal2 .talklog-modal {
@@ -682,7 +684,49 @@ a {
 .body #talk-container .talk-modal2 .talklog-menu h2 {
   text-align: center;
 }
+.body #talk-container .talk-modal2 .ban-manage {
+  width: 512px;
+  height: 750px;
+  top: 0;
+  position: absolute;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: white;
+  transform: translateX(512px);
+  transition: 1s;
+}
+.body #talk-container .talk-modal2 .ban-manage.on {
+  width: 512px;
+  height: 750px;
+  bottom: 0;
+  position: absolute;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: white;
+  transform: translateX(0px);
+}
 
+.body #talk-container .talk-modal2 .ban-manage .manage-head {
+  padding: 1rem;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.body #talk-container .talk-modal2 .ban-manage .manage-head span {
+  margin-right: 15px;
+}
+.body #talk-container .talk-modal2 .ban-manage .manage-list {
+  width: 100%;
+  height: 100%;
+}
+.body #talk-container .talk-modal2 .ban-manage .manage-list div {
+  display: flex;
+  justify-content: center;
+}
+.body #talk-container .talk-modal2 .ban-manage .manage-list p {
+  text-align: center;
+  font-weight: 800;
+}
 .body #talk-container #talk-list .ban-list {
   height: 3rem;
 
@@ -758,6 +802,7 @@ a {
   position: relative;
   border: 1px solid #ebeefe;
   border-left: none;
+  overflow: hidden;
 }
 
 .body #talk-container #talk-log .talk-wrap {
@@ -768,7 +813,7 @@ a {
 }
 .body #talk-container #talk-log .talk-wrap.on {
   width: 100%;
-  height: 400px;
+  height: 350px;
   transition: height 1s;
   overflow: auto;
   border-bottom: 1px solid #ebeefe;

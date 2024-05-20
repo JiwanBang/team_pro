@@ -33,11 +33,11 @@
           </button>
         </div>
         <div class="my-btns">
-          <div class="noCookie on">
+          <div class="noCookie">
             <button>로그인</button>
             <div class="my-store" id="my-store1">내 상점 ▼</div>
           </div>
-          <div class="Cookie">
+          <div class="Cookie on">
             <button>로그아웃</button>
             <div class="notice" id="notice">알림 ▼</div>
             <div class="my-store" id="my-store2">내 상점 ▼</div>
@@ -252,10 +252,9 @@
             </div>
 
             <div class="talklist-menu">
-              <h3 class="on">전체 대화</h3>
-              <h3>구매 대화</h3>
-              <h3>판매 대화</h3>
-              <h2>차단 상점 관리</h2>
+              <!-- <h3 class="btn-li on">전체 대화</h3>
+              <h3 class="btn-li">구매 대화</h3>
+              <h3 class="btn-li">판매 대화</h3> -->
             </div>
           </div>
         </div>
@@ -282,7 +281,7 @@
             </div>
           </div>
           <div id="talkwrap-container">
-            <div class="talk-wrap">
+            <div class="talk-wrap" id="log-wrap">
               <div class="seller-info2">
                 <div>
                   <img src="./imgs/ad-img.png">
@@ -315,7 +314,7 @@
 
 
             <div class="talk-input">
-              <span>
+              <span id="input-btn">
                 <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img">
                   <path d="M10 0a9.947 9.947 0 0 1 7.094 2.945c3.874 3.889 3.874 10.218 0 14.108A9.944 9.944 0 0 1 10 20a9.946 9.946 0 0 1-7.095-2.946c-3.874-3.89-3.874-10.219 0-14.108A9.949 9.949 0 0 1 10 0zm0 1.73a8.096 8.096 0 0 0-5.774 2.406c-3.22 3.233-3.22 8.494 0 11.727A8.1 8.1 0 0 0 10 18.269a8.1 8.1 0 0 0 5.773-2.406c3.22-3.233 3.22-8.494 0-11.727A8.095 8.095 0 0 0 10 1.731zm0 3.558c.503 0 .91.387.91.865v2.98h3.134c.502 0 .91.388.91.866s-.408.866-.91.866H10.91v2.98c0 .478-.407.866-.91.866-.502 0-.91-.388-.91-.866v-2.98H5.956c-.502 0-.91-.388-.91-.866s.408-.865.91-.865H9.09v-2.98c0-.479.408-.866.91-.866z" fill="#7f7f7f" fill-rule="evenodd"></path>
                 </svg>
@@ -335,40 +334,9 @@
               </div>
 
             </div>
-            <!-- <div class="input-btns">
-              <div>
-                <div>
-                  <img src="./imgs/icon_ic_location.png">
-                </div>
-                <p>배송지전달</p>
-              </div>
-              <div>
-                <div>
-                  <img src="./imgs/icon_ic_clock.png">
-                </div>
-                <p>직거래 약속</p>
-              </div>
-              <div>
-                <div>
-                  <img src="./imgs/icon_ic_product_select.png">
-                </div>
-                <p>상품선택</p>
-              </div>
-            </div> -->
-            <div class="emoji-box">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
-              <img clss="emojis" src="./imgs/2.jpeg">
+
+            <div id="input-box">
+
             </div>
           </div>
 
@@ -376,12 +344,16 @@
             <div class="talklog-modal">
             </div>
             <div class="talklog-menu">
-              <h2>차단 상점 관리</h2>
+            </div>
+            <div class="ban-manage">
+              <div class="manage-head"><span>〈</span>차단 상점 관리</div>
+              <div class="manage-list">
+                <div><img src="./imgs/talk/ic_state_empty_buntalk.d6c5a656.svg"></div>
+                <p>차단 상점이 없습니다.</p>
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
 
@@ -407,7 +379,7 @@
       </div>
     </div>
   </div>
-  <div id="modal">
+  <!-- <div id="modal">
     <div class="login-modal">
     </div>
     <div class="login">
@@ -473,7 +445,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+  <script src="./talk.js"></script>
   <script src="./root.js"></script>
 </body>
 
